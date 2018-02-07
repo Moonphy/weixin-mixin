@@ -1,0 +1,14 @@
+<!--pages/assign/assign.wxml-->
+<import src="../templates/newUser.wxml"/>
+
+<view class="container">
+    <text>pages/assign/assign.wxml</text>
+
+
+    <template wx:if="{{showUserTemp}}" is="msgItem" data="{{...item}}"/>
+
+    <view>
+        <button bindtap="showTemp">显示temp</button>
+        <button bindtap="hideTemp">隐藏temp</button>
+    </view>
+</view>

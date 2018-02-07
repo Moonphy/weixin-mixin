@@ -1,0 +1,7 @@
+<template name="msgItem">
+    <view class="tempContainer">
+        <view>index: {{index}}</view>
+        <view>page: {{page}}</view>
+        <view>obj: {{test}}</view>
+    </view>
+</template>
