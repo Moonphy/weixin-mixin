@@ -1,0 +1,10 @@
+<view class="tempContainer" wx:if="{{showUserCom}}">
+    <view>我是component's index: {{index}}</view>
+    <view>我是component's page: {{page}}</view>
+    <view bindtap="showEvent">点我show: {{test}}</view>
+    <view>点我say hi</view>
+    <button bindtap="showTemp" >显示temp</button>
+    <button bindtap="hideTemp">隐藏temp</button>
+    <view>--------------------------</view>
+    <slot></slot>
+</view>

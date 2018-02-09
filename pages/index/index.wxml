@@ -10,6 +10,7 @@
   <view>
     <button bindtap='bindAssignTap'>To assign page</button>
     <button bindtap='bindMixinTap'>To mixin page</button>
+    <navigator url="/pages/showComponent/showComponent" hover-class="navigator-hover">component page</navigator>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

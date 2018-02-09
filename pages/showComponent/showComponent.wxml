@@ -1,0 +1,6 @@
+<!--pages/showComponent/showComponent.wxml-->
+<view class="container">
+    <new-user test="{{test}}" bindcomClick="comClick">
+        <view>{{slot}}</view>
+    </new-user>
+</view>
