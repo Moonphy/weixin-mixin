@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import BroadCastEvent from '../../utils/broadCastEvent'
 Page({
   data: {
     motto: 'Hello World',
@@ -26,6 +26,9 @@ Page({
     })
   },
   onLoad: function () {
+		setTimeout(function () {
+			broad.emit('show', 'linminghui')
+		},3000)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
